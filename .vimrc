@@ -1,7 +1,7 @@
 " Author:       John F. Hogarty
 " Email:        hogihung@gmail.com
 " Last Updated: 11/09/2014 @ 03:12pm est
-" -------------------------------------- 
+" --------------------------------------
 
 set nocompatible		" be iMproved, required
 filetype off  			" required
@@ -50,6 +50,9 @@ set shell=zsh
 set number
 set t_Co=256  " Set terminal colors to 256
 set listchars=tab:▸\ ,eol:¬  " Use same symbols as TextMate for tabstops and EOLs
+
+" Change leader, which defaults as backslash, to the comma key
+let mapleader = ","
 
 " Adjusting tab spacing, use softtabs
 set tabstop=2
@@ -131,7 +134,7 @@ if has("autocmd")
 endif
 
 
-" PUT FUNCTIONS FROM HERE DOWN 
+" PUT FUNCTIONS FROM HERE DOWN
 " ----------------------------
 " Set tabstop, softabstop and shiftwidth to the same value
 " To use, type:  :Stab
