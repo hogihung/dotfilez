@@ -1,0 +1,10 @@
+				This is just a test.
+Lets put some spaces at then end.
+There was 8 spaces above.
+
+Next line will have tabs:
+    two tab
+        four tab
+  one tab
+
+Done.
