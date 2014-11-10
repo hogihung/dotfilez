@@ -254,8 +254,7 @@ Password: chsh: PAM: Authentication failure
 jfhogarty@Ubuntu64VB:~$
 
 Note:  The error above - PAM: Authentication failure
-       To fix this issue, since I performed the curl command as a normal user,
-       use sudo as follows:
+       To fix this issue, execute the following:
 
        jfhogarty@Ubuntu64VB:~$ chsh -s /bin/zsh
        Password:
@@ -571,19 +570,7 @@ Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in /home/jfhogarty/.ssh/id_rsa.
 Your public key has been saved in /home/jfhogarty/.ssh/id_rsa.pub.
-The key fingerprint is:
-73:8b:5c:2d:75:3f:cc:c0:cf:c8:17:74:73:6b:66:b7 hogihung@gmail.com
-The key's randomart image is:
-+--[ RSA 2048]----+
-|               oo|
-|            . . =|
-|            .o.*.|
-|           o..@.+|
-|        S + .o E.|
-|       . = o  . .|
-|        o .      |
-|                 |
-|                 |
+{--SNIP--}
 +-----------------+
 ➜  .ssh
 

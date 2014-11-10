@@ -15,12 +15,12 @@ $
 
 # Command Line History (newest to oldest):
 :wq!
+:q
 :q!
 :wq
 :w
 :e /home/jfhogarty/Projects/hare/config/database.yml
 :e config/database.yml
-:q
 :set nonumber
 :set number
 :vsp spec/models/hot_item_spec.rb
@@ -61,43 +61,44 @@ $
 "0	CHAR	0
 	  database: db/test.sqlite3
 	
-"1	LINE	0
-	
+""1	LINE	0
+	|                 |
 "2	LINE	0
-	"
+	|                 |
 "3	LINE	0
-	
+	|        o .      |
 "4	LINE	0
-	" Remove trailing whitespace automatically while a file
-	" is saved, for the defined file extensions:
-	autocmd BufWritePre *.txt,*.rb,*.erb :call <SID>StripTrailingWhitespaces()
+	|       . = o  . .|
 "5	LINE	0
-	
+	|        S + .o E.|
 "6	LINE	0
-	
+	|           o..@.+|
 "7	LINE	0
-	
-	
+	|            .o.*.|
 "8	LINE	0
-	
+	|            . . =|
 "9	LINE	0
-	
-""-	CHAR	0
-	n
+	|               oo|
+"-	CHAR	0
+	,
 
 # File marks:
-'0  32  10  ~/.gitignore
-'1  31  12  ~/.gitignore
-'2  1  0  ~/.ICEauthority
-'3  30  13  ~/.gitignore
-'4  26  0  ~/.gitignore
-'5  22  0  ~/Projects/bobots/config/database.yml
-'6  1  0  ~/Projects/Gem
-'7  1  0  ~/Projects/hare/app/controllers/hot_items_controller.rb
-'8  84  12  ~/.vimrc
-'9  1  4  ~/filetest.txt
+'0  574  0  ~/install_log.txt
+'1  1  0  ~/Projects/hare/.git/config
+'2  32  10  ~/.gitignore
+'3  31  12  ~/.gitignore
+'4  1  0  ~/.ICEauthority
+'5  30  13  ~/.gitignore
+'6  26  0  ~/.gitignore
+'7  22  0  ~/Projects/bobots/config/database.yml
+'8  1  0  ~/Projects/Gem
+'9  1  0  ~/Projects/hare/app/controllers/hot_items_controller.rb
 
 # Jumplist (newest first):
+-'  574  0  ~/install_log.txt
+-'  259  15  ~/install_log.txt
+-'  1  0  ~/install_log.txt
+-'  1  0  ~/Projects/hare/.git/config
 -'  32  10  ~/.gitignore
 -'  31  0  ~/.gitignore
 -'  1  0  ~/.gitignore
@@ -150,31 +151,29 @@ $
 -'  62  12  ~/.vimrc
 -'  64  0  ~/.vimrc
 -'  63  16  ~/.vimrc
--'  1  0  ~/install_log.txt
--'  607  0  ~/install_log.txt
+-'  594  0  ~/install_log.txt
 -'  38  0  ~/Projects/hare
 -'  1  0  ~/.gitconfig
 -'  1  0  ~/.ruby-version
 -'  1  0  ~/.rub
 -'  22  0  ~/.vimrc
 -'  68  0  ~/install_log.txt
--'  602  0  ~/install_log.txt
--'  423  0  ~/install_log.txt
--'  325  0  ~/install_log.txt
--'  276  0  ~/install_log.txt
+-'  589  0  ~/install_log.txt
+-'  422  0  ~/install_log.txt
+-'  324  0  ~/install_log.txt
+-'  275  0  ~/install_log.txt
 -'  201  45  ~/install_log.txt
--'  260  30  ~/install_log.txt
 -'  22  0  ~/install_log.txt
--'  271  0  ~/install_log.txt
+-'  270  0  ~/install_log.txt
 -'  139  0  ~/install_log.txt
 -'  37  0  ~/install_log.txt
 -'  83  0  ~/install_log.txt
--'  611  0  ~/install_log.txt
+-'  598  0  ~/install_log.txt
 -'  39  0  ~/install_log.txt
 -'  76  0  ~/install_log.txt
--'  320  0  ~/install_log.txt
 -'  319  0  ~/install_log.txt
--'  323  0  ~/install_log.txt
+-'  318  0  ~/install_log.txt
+-'  322  0  ~/install_log.txt
 -'  143  2  ~/install_log.txt
 -'  154  0  ~/install_log.txt
 -'  158  0  ~/install_log.txt
@@ -183,7 +182,7 @@ $
 -'  152  0  ~/install_log.txt
 -'  94  0  ~/Downloads/chruby-0.3.8/scripts/setup.sh
 -'  1  0  ~/Downloads/chruby-0.3.8/scripts/setup.sh
--'  327  0  ~/install_log.txt
+-'  326  0  ~/install_log.txt
 -'  8  12  ~/Projects/hare/Gemfile
 -'  3  0  ~/Projects/hare/spec/models/issue_spec.rb
 -'  105  20  ~/.vimrc
@@ -192,10 +191,120 @@ $
 -'  41  0  ~/.vimrc
 -'  1  0  ~/Projects/oobV2/Gemfile
 -'  65  24  ~/.tmux.conf
--'  63  0  ~/.tmux.conf
--'  1  0  ~/.tmux.conf
 
 # History of marks within files (newest to oldest):
+
+> ~/install_log.txt
+	"	574	0
+	^	573	10
+	.	257	0
+	+	354	41
+	+	362	101
+	+	355	66
+	+	357	103
+	+	359	17
+	+	355	0
+	+	354	91
+	+	361	93
+	+	362	0
+	+	364	30
+	+	365	114
+	+	365	3
+	+	370	42
+	+	375	23
+	+	370	0
+	+	380	0
+	+	396	0
+	+	422	0
+	+	424	19
+	+	614	20
+	+	555	0
+	+	614	25
+	+	554	21
+	+	399	0
+	+	398	3
+	+	399	0
+	+	415	0
+	+	401	0
+	+	405	2
+	+	410	0
+	+	407	27
+	+	400	55
+	+	413	43
+	+	414	0
+	+	415	26
+	+	420	8
+	+	422	0
+	+	415	0
+	+	424	27
+	+	431	6
+	+	438	0
+	+	614	8
+	+	588	0
+	+	555	0
+	+	446	0
+	+	439	0
+	+	614	0
+	+	446	0
+	+	477	0
+	+	475	8
+	+	477	0
+	+	470	0
+	+	479	46
+	+	497	8
+	+	479	12
+	+	500	15
+	+	502	46
+	+	516	8
+	+	551	0
+	+	527	0
+	+	528	59
+	+	549	42
+	+	551	0
+	+	551	0
+	+	435	22
+	+	436	18
+	+	437	0
+	+	551	35
+	+	63	19
+	+	555	19
+	+	559	23
+	+	575	11
+	+	576	0
+	+	583	0
+	+	586	0
+	+	592	50
+	+	593	0
+	+	590	5
+	+	590	102
+	+	597	0
+	+	603	61
+	+	614	0
+	+	608	25
+	+	605	0
+	+	606	0
+	+	607	0
+	+	608	0
+	+	609	0
+	+	599	9
+	+	601	0
+	+	612	43
+	+	33	0
+	+	258	6
+	+	257	26
+	+	259	0
+	+	257	47
+	+	258	0
+	+	573	9
+	+	574	0
+	+	257	0
+
+> ~/Projects/hare/.git/config
+	"	1	0
+	^	8	40
+	.	8	39
+	+	7	45
+	+	8	39
 
 > ~/.gitignore
 	"	32	10
@@ -411,111 +520,6 @@ $
 	.	7	12
 	+	7	12
 
-> ~/install_log.txt
-	"	626	0
-	^	626	0
-	.	33	0
-	+	274	0
-	+	275	0
-	+	274	0
-	+	342	16
-	+	423	0
-	+	344	44
-	+	347	36
-	+	354	0
-	+	355	41
-	+	363	101
-	+	356	66
-	+	358	103
-	+	360	17
-	+	356	0
-	+	355	91
-	+	362	93
-	+	363	0
-	+	365	30
-	+	366	114
-	+	366	3
-	+	371	42
-	+	376	23
-	+	371	0
-	+	381	0
-	+	397	0
-	+	423	0
-	+	425	19
-	+	627	20
-	+	556	0
-	+	627	25
-	+	555	21
-	+	400	0
-	+	399	3
-	+	400	0
-	+	416	0
-	+	402	0
-	+	406	2
-	+	411	0
-	+	408	27
-	+	401	55
-	+	414	43
-	+	415	0
-	+	416	26
-	+	421	8
-	+	423	0
-	+	416	0
-	+	425	27
-	+	432	6
-	+	439	0
-	+	627	8
-	+	601	0
-	+	556	0
-	+	447	0
-	+	440	0
-	+	627	0
-	+	447	0
-	+	478	0
-	+	476	8
-	+	478	0
-	+	471	0
-	+	480	46
-	+	498	8
-	+	480	12
-	+	501	15
-	+	503	46
-	+	517	8
-	+	552	0
-	+	528	0
-	+	529	59
-	+	550	42
-	+	552	0
-	+	552	0
-	+	436	22
-	+	437	18
-	+	438	0
-	+	552	35
-	+	63	19
-	+	556	19
-	+	560	23
-	+	588	11
-	+	589	0
-	+	596	0
-	+	599	0
-	+	605	50
-	+	606	0
-	+	603	5
-	+	603	102
-	+	610	0
-	+	616	61
-	+	627	0
-	+	621	25
-	+	618	0
-	+	619	0
-	+	620	0
-	+	621	0
-	+	622	0
-	+	612	9
-	+	614	0
-	+	625	43
-	+	33	0
-
 > ~/Projects/oobV2/Gemfile
 	"	1	0
 
@@ -642,13 +646,6 @@ $
 	.	8	40
 	+	7	46
 	+	8	40
-
-> ~/Projects/hare/.git/config
-	"	8	39
-	^	8	40
-	.	8	39
-	+	7	45
-	+	8	39
 
 > ~/.ssh/id_rsa.pub
 	"	1	0
