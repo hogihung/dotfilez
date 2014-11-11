@@ -101,7 +101,7 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Support sending rspec to tmux (thoughtbot)
 " http://robots.thoughtbot.com/running-specs-from-vim-sent-to-tmux-via-tslime
-let g:respec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 
 " vim-rspec mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
