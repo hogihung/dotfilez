@@ -16,3 +16,5 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cd ~/.vim/bundle
 git clone https://github.com/altercation/vim-colors-solarized.git
 ```
+
+Fire up vim and issue the command:  :PluginInstall
