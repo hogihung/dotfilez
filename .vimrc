@@ -53,6 +53,9 @@ set listchars=tab:▸\ ,eol:¬  " Use same symbols as TextMate for tabstops and 
 " Change leader, which defaults as backslash, to the comma key
 let mapleader = ","
 
+" Swap the less used semi-colon for colon
+nnoremap ; :
+
 " Adjusting tab spacing, use softtabs
 set tabstop=2
 set softtabstop=2
@@ -64,6 +67,12 @@ let g:solarized_termcolors=256
 syntax enable
 set background=light
 colorscheme solarized
+
+" Add some column when exceeding the 80th column
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+" use below line instead of the above for a solid column
+"set colorcolumn=81
 
 " Invisible character colors
 highlight NonText guifg=#4a4a59
