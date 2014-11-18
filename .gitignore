@@ -30,3 +30,6 @@ examples.desktop
 .gitignore.swp
 .ICEauthority
 .Xauthority
+.pryrc.local
+.ruby-version
+
