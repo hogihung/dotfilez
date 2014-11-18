@@ -28,8 +28,7 @@ ln -s ~/dotfilez/.vimrc .vimrc
 ln -s ~/dotfilez/.tmux.conf .tmux.conf
 ```
 
-
-hr
+<br><hr>
 For Mac OS X Users:
 To enable copy and paste with Tmux and the OS X clipboard, follow these steps:
 
