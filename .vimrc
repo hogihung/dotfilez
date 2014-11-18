@@ -1,8 +1,6 @@
 " Author:       John F. Hogarty
 " Email:        hogihung@gmail.com
-" Last Updated: 11/09/2014 @ 03:12pm est
 " --------------------------------------
-
 set nocompatible		" be iMproved, required
 filetype off  			" required
 
@@ -26,6 +24,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-coffee-script'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 't9md/vim-ruby-xmpfilter'
 Plugin 'tomtom/tlib_vim.git'           " required for snipmate
