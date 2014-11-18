@@ -18,8 +18,18 @@ git clone https://github.com/altercation/vim-colors-solarized.git
 ```
 
 Fire up vim and issue the command:  :PluginInstall
+You should see the status of the Plugins being installed.  Once succesfull, you can exit vim.  
+
+Go home and create sym-links:
+
+```
+cd
+ln -s ~/dotfilez/.vimrc .vimrc
+ln -s ~/dotfilez/.tmux.conf .tmux.conf
+```
 
 
+hr
 For Mac OS X Users:
 To enable copy and paste with Tmux and the OS X clipboard, follow these steps:
 
