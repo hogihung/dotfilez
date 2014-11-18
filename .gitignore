@@ -32,4 +32,4 @@ examples.desktop
 .Xauthority
 .pryrc.local
 .ruby-version
-
+.pry_history
