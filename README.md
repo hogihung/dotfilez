@@ -8,9 +8,6 @@ mkdir .vim
 mkdir .vim/bundle
 
 git clone https://github.com/hogihung/dotfilez.git
-cp ~/dotfilez/.vimrc ~/
-cp ~/dotfilez/.tmux.conf ~/
-
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 cd ~/.vim/bundle
