@@ -57,6 +57,9 @@ let mapleader = ","
 " Swap the less used semi-colon for colon
 nnoremap ; :
 
+" Create mapping to shortcut using :%:h
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 " Adjusting tab spacing, use softtabs
 set tabstop=2
 set softtabstop=2
