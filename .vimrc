@@ -69,7 +69,7 @@ set expandtab
 " Configure color theme
 let g:solarized_termcolors=256
 syntax enable
-set background=light
+set background=dark 
 colorscheme solarized
 
 " Add some column when exceeding the 80th column
@@ -84,6 +84,9 @@ highlight SpecialKey guifg=#4a4a59
 
 " Shortcut for rapid toggle 'set list'
 nmap <leader>sl :set list!<CR>
+
+" Disable vim auto-paste (corrects too much identing)
+map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 
 " Shortcut for identing entire page
 map <Leader>i mmgg=G`m<CR>
