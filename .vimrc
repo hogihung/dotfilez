@@ -85,6 +85,9 @@ highlight SpecialKey guifg=#4a4a59
 " Shortcut for rapid toggle 'set list'
 nmap <leader>sl :set list!<CR>
 
+" Shortcut for identing entire page
+map <Leader>i mmgg=G`m<CR>
+
 " Map TextMate/Sublime commands for indentation
 " (Command key seems to only work in OS X)
 nmap <D-[> <<
