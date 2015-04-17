@@ -2,8 +2,8 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Support for chruby:
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+#source /usr/local/share/chruby/chruby.sh
+#source /usr/local/share/chruby/auto.sh
 
 # Set our terminal to use 256 colors (may not be needed on some systems)
 [ -z "$TMUX" ] && export TERM=xterm-256color

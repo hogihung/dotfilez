@@ -9,8 +9,8 @@ case $- in
 esac
 
 # Support for chruby:
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+#source /usr/local/share/chruby/chruby.sh
+#source /usr/local/share/chruby/auto.sh
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
