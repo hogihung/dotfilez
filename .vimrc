@@ -84,12 +84,18 @@ highlight SpecialKey guifg=#4a4a59
 
 " Shortcut for rapid toggle 'set list'
 nmap <leader>sl :set list!<CR>
-
 " Disable vim auto-paste (corrects too much identing)
-map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
-
+map <leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 " Shortcut for identing entire page
-map <Leader>i mmgg=G`m<CR>
+map <leader>i mmgg=G`m<CR>
+
+" Search configuration
+set incsearch     " Highlight while searching
+set hlsearch      " Highlight all matches after entering search pattern
+" Toggle highlighting off
+nmap <leader>h :nohlsearch<cr>
+set ignorecase    " Case insensitive pattern matching
+set smartcase     " Overrides ignorecase if pattern contains upcase
 
 " Map TextMate/Sublime commands for indentation
 " (Command key seems to only work in OS X)
