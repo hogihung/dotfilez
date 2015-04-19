@@ -39,6 +39,7 @@ Plugin 'jgdavey/vim-railscasts'
 Plugin 'altercation/vim-colors-solarized'
 " Plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
+Plugin 'yegappan/greplace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()		" required
