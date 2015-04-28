@@ -25,6 +25,8 @@ Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-coffee-script'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 't9md/vim-ruby-xmpfilter'
 Plugin 'tomtom/tlib_vim.git'           " required for snipmate
@@ -40,6 +42,7 @@ Plugin 'altercation/vim-colors-solarized'
 " Plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'yegappan/greplace'
+Plugin 'rking/ag.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()		" required
@@ -49,8 +52,9 @@ filetype plugin indent on	" required
 syntax on
 set shell=zsh
 set number
-set t_Co=256  " Set terminal colors to 256
+set t_Co=256                 " Set terminal colors to 256
 set listchars=tab:▸\ ,eol:¬  " Use same symbols as TextMate for tabstops and EOLs
+set laststatus=2             " Display vim status bar
 
 " Change leader, which defaults as backslash, to the comma key
 let mapleader = ","
