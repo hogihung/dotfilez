@@ -4,6 +4,11 @@ export ZSH=$HOME/.oh-my-zsh
 # Support for chruby:
 #source /usr/local/share/chruby/chruby.sh
 #source /usr/local/share/chruby/auto.sh
+alias ror="cd /Users/jfhogarty/Documents/Programming/RoR"
+alias cuc='cucumber -r features'
+alias cucs='cucumber -r features SELENIUM=true'
+alias cucp='cucumber -r features -p startup SELENIUM=true'
+alias end_round1='cucp features/start_auctions/end_round_1.feature'
 
 # Set our terminal to use 256 colors (may not be needed on some systems)
 [ -z "$TMUX" ] && export TERM=xterm-256color
@@ -56,9 +61,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
+# User configuration (consider building on this for user specific paths)
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -85,3 +90,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin" 
