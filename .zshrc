@@ -1,9 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Support for chruby:
-#source /usr/local/share/chruby/chruby.sh
-#source /usr/local/share/chruby/auto.sh
+# User defined alias's
 alias ror="cd /Users/jfhogarty/Documents/Programming/RoR"
 alias cuc='cucumber -r features'
 alias cucs='cucumber -r features SELENIUM=true'
@@ -93,3 +91,4 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin" 
+
