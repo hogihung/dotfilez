@@ -62,6 +62,9 @@ let mapleader = ","
 " Swap the less used semi-colon for colon
 nnoremap ; :
 
+" Auto save files when switching focus
+:au FocusLost * silent! wa
+
 " Create mapping to shortcut using :%:h
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
