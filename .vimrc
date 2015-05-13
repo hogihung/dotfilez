@@ -63,7 +63,7 @@ let mapleader = ","
 nnoremap ; :
 
 " Auto save files when switching focus
-:au FocusLost * silent! wa
+autocmd FocusLost * silent! wall
 
 " Create mapping to shortcut using :%:h
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
