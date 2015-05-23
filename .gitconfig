@@ -1,3 +1,21 @@
+[github]
+	user = hogihung 
 [user]
-	name = John F. Hogarty
 	email = hogihung@gmail.com
+	name = "John Hogarty"
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[core]
+  editor = /usr/local/bin/vim
+[alias]
+  co = checkout
+  ci = commit
+  br = branch
+  st = status
+[color]
+  ui = auto
