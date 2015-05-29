@@ -8,6 +8,10 @@ alias cucs='cucumber -r features SELENIUM=true'
 alias cucp='cucumber -r features -p startup SELENIUM=true'
 alias end_round1='cucp features/start_auctions/end_round_1.feature'
 
+alias mysql_start='Mysql.server start'
+alias mysql_stop='Mysql.server stop'
+alias mysql_status='Mysql.server status'
+
 # Set our terminal to use 256 colors (may not be needed on some systems)
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
