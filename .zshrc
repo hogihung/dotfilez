@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-source ~/.zprofile
 
 # User defined alias's
 alias ror="cd /Users/jfhogarty/Documents/Programming/RoR"
@@ -67,8 +66,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration (consider building on this for user specific paths)
-#export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-export PATH="/usr/local/bin:/Users/jfhogarty/.gem/ruby/2.1.3/bin:/Users/jfhogarty/.rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/bin:/Users/jfhogarty/.rubies/ruby-2.1.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
