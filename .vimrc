@@ -60,6 +60,9 @@ set splitright               " Put new file to right on vertical split
 set splitbelow               " Put new file to bottom on horizontal split
 set relativenumber           " Set relative numbering
 
+" Setup ctags (currently for fcctv-forward app
+set tags=/Users/jfhogarty/Documents/RoR/tags
+
 " Change leader, which defaults as backslash, to the comma key
 let mapleader = ","
 
