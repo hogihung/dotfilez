@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# Export any environment settings
+export POWER_SERVER_2FA_MODE=test
+
 # User defined alias's
 alias ror="cd /Users/jfhogarty/Documents/RoR"
 alias tms="~/tmux_start.sh"
