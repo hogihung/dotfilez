@@ -43,6 +43,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'L9'
 Plugin 'yegappan/greplace'
 Plugin 'rking/ag.vim'
+Plugin 'godlygeek/tabular'
 
 " All of your Plugins must be added before the following line
 call vundle#end()		" required
@@ -84,7 +85,7 @@ set expandtab
 " Configure color theme
 let g:solarized_termcolors=256
 syntax enable
-set background=dark 
+set background=dark
 colorscheme solarized
 
 " Add some column when exceeding the 80th column
@@ -161,7 +162,7 @@ if has("autocmd")
   " Customization based on house-style (arbitrary)
   autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
-  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+  "autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd FileType perl setlocal ts=4 sts=4 sw=4 noexpandtab
 
   " Treat .rss files as XML
@@ -216,3 +217,16 @@ function! <SID>StripTrailingWhitespaces()
   call cursor(l, c)
 endfunction
 
+"Support Tabularize
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+
+function! s:align()
+  let p = '^\s*|\s.*\s|\s*$'
+  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+    Tabularize/|/l1
+    normal! 0
+    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+  endif
+endfunction
