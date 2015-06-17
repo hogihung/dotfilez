@@ -2,7 +2,8 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Export any environment settings
-export POWER_SERVER_2FA_MODE=test
+# comment out power server for now - related to fcc project
+#export POWER_SERVER_2FA_MODE=test
 
 # User defined alias's
 alias ror="cd /Users/jfhogarty/Documents/RoR"
