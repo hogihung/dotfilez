@@ -5,24 +5,6 @@ export ZSH=$HOME/.oh-my-zsh
 # comment out power server for now - related to fcc project
 #export POWER_SERVER_2FA_MODE=test
 
-# User defined alias's
-alias ror="cd /Users/jfhogarty/Documents/RoR"
-alias tms="~/tmux_start.sh"
-
-alias cuc='cucumber -r features'
-alias cucs='cucumber -r features SELENIUM=true'
-alias cucp='cucumber -r features -p startup SELENIUM=true'
-alias end_round1='cucp features/start_auctions/end_round_1.feature'
-alias end_round2='cucp features/start_auctions/end_round_2.feature'
-alias stage2r1='cucp features/start_auctions/start_s2_r1.feature'
-
-alias mysql_start='Mysql.server start'
-alias mysql_stop='Mysql.server stop'
-alias mysql_status='Mysql.server status'
-
-alias git_john='git log --no-merges --stat --author="John Hogart" --name-only --pretty=format:"" | sort -u'
-alias find_wait="fgrep -r wait features/ | grep 33"
-
 # Set our terminal to use 256 colors (may not be needed on some systems)
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
@@ -107,3 +89,4 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin" 
 
+source ~/dotfiles/.zshrc.local
