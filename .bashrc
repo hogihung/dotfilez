@@ -112,3 +112,20 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# User defined alias's
+alias ror="cd /Users/jfhogarty/Documents/RoR"
+alias tms="~/tmux_start.sh"
+
+alias cuc='cucumber -r features'
+alias cucs='cucumber -r features SELENIUM=true'
+alias cucp='cucumber -r features -p startup SELENIUM=true'
+alias end_round1='cucp features/start_auctions/end_round_1.feature'
+alias end_round2='cucp features/start_auctions/end_round_2.feature'
+
+alias mysql_start='Mysql.server start'
+alias mysql_stop='Mysql.server stop'
+alias mysql_status='Mysql.server status'
+
