@@ -14,10 +14,14 @@ alias cucs='cucumber -r features SELENIUM=true'
 alias cucp='cucumber -r features -p startup SELENIUM=true'
 alias end_round1='cucp features/start_auctions/end_round_1.feature'
 alias end_round2='cucp features/start_auctions/end_round_2.feature'
+alias stage2r1='cucp features/start_auctions/start_s2_r1.feature'
 
 alias mysql_start='Mysql.server start'
 alias mysql_stop='Mysql.server stop'
 alias mysql_status='Mysql.server status'
+
+alias git_john='git log --no-merges --stat --author="John Hogart" --name-only --pretty=format:"" | sort -u'
+alias find_wait="fgrep -r wait features/ | grep 33"
 
 # Set our terminal to use 256 colors (may not be needed on some systems)
 [ -z "$TMUX" ] && export TERM=xterm-256color
