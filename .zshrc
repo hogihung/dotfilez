@@ -89,4 +89,4 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin" 
 
-source ~/dotfiles/.zshrc.local
+source ~/dotfilez/.zshrc.local
