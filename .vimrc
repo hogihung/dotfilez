@@ -44,6 +44,7 @@ Plugin 'L9'
 Plugin 'yegappan/greplace'
 Plugin 'rking/ag.vim'
 Plugin 'godlygeek/tabular'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()		" required
@@ -173,6 +174,8 @@ if has("autocmd")
   autocmd BufWritePre *.txt,*.rb,*.erb :call <SID>StripTrailingWhitespaces()
 endif
 
+" Turn on ruby compiler for vim
+autocmd FileType ruby compiler ruby
 
 " PUT FUNCTIONS FROM HERE DOWN
 " ----------------------------
