@@ -12,6 +12,13 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 cd ~/.vim/bundle
 git clone https://github.com/altercation/vim-colors-solarized.git
+
+[Optional - Autocompletion via YouCompleteMe]
+cd ~/.vim/bundle
+git clone https://github.com/Valloric/YouCompleteMe.git
+cd YouCompleteMe
+git submodule update --init --recursive
+./install.sh --clang-completer
 ```
 
 Go home and create sym-links:
