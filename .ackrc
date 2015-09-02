@@ -1,0 +1,7 @@
+# Always use color
+--color
+
+# Ignore directories
+--ignore-dir=.git/
+--ignore-dir=tmp/
+
