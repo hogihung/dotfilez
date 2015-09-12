@@ -47,6 +47,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'Valloric/YouCompleteMe'
 " Next line is for a better vim status line
 Plugin 'itchyny/lightline.vim'
+Plugin 'elixir-lang/vim-elixir'
 
 " All of your Plugins must be added before the following line
 call vundle#end()		" required
