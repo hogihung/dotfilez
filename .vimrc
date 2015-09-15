@@ -63,6 +63,8 @@ set laststatus=2             " Display vim status bar
 set updatecount=0            " Disable swap files
 set splitright               " Put new file to right on vertical split
 set splitbelow               " Put new file to bottom on horizontal split
+
+" Using a toggle now for this - use Cntrl+n
 "set relativenumber           " Set relative numbering (set rnu / set nornu)
 
 " Setup ctags (currently for fcctv-forward app
