@@ -1,5 +1,5 @@
 INSTALL NOTES FOR NEW DEVELOPER TOOL BOX:
-
+(The following was captured while setting up a fresh developer environment under Ubuntu.)
 
 AFTER FRESH INSTALL OF UBUNTU:
 jfhogarty@Ubuntu64VB:~$ ls -la
@@ -314,100 +314,14 @@ drwxr-xr-x  2 jfhogarty jfhogarty  4096 Nov  7 23:26 Videos
 jfhogarty@Ubuntu64VB:~$
 
 
-INSTALL CHRUBY and RUBY-INSTALL:
-Resources:
-https://github.com/postmodern/chruby
-https://github.com/postmodern/ruby-install
+***NOTE: Removed install instructions for CHRUBY as I went back to using RVM***
 
-cd ~
-cd Downloads/
-➜  Downloads  wget -O chruby-0.3.8.tar.gz https://github.com/postmodern/chruby/archive/v0.3.8.tar.gz
---2014-11-08 14:46:38--  https://github.com/postmodern/chruby/archive/v0.3.8.tar.gz
-Resolving github.com (github.com)... 192.30.252.131
-Connecting to github.com (github.com)|192.30.252.131|:443... connected.
-HTTP request sent, awaiting response... 302 Found
-Location: https://codeload.github.com/postmodern/chruby/tar.gz/v0.3.8 [following]
---2014-11-08 14:46:39--  https://codeload.github.com/postmodern/chruby/tar.gz/v0.3.8
-Resolving codeload.github.com (codeload.github.com)... 192.30.252.146
-Connecting to codeload.github.com (codeload.github.com)|192.30.252.146|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 30855 (30K) [application/x-gzip]
-Saving to: ‘chruby-0.3.8.tar.gz’
+See instructions at: http://rvm.io
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+\curl -sSL https://get.rvm.io | bash -s stable
+rvm list known
+rvm install 2.1.3
 
-100%[=========================================================================================>] 30,855      --.-K/s   in 0.05s
-
-2014-11-08 14:46:39 (622 KB/s) - ‘chruby-0.3.8.tar.gz’ saved [30855/30855]
-
-➜  Downloads
-
-➜  Downloads tar -xzvf chruby-0.3.8.tar.gz
-➜  Downloads cd chruby-0.3.8
-➜  chruby-0.3.8
-➜  chruby-0.3.8  sudo make install
-[sudo] password for jfhogarty:
-for dir in `find etc lib bin sbin share -type d 2>/dev/null`; do mkdir -p /usr/local/$dir; done
-for file in `find etc lib bin sbin share -type f 2>/dev/null`; do cp $file /usr/local/$file; done
-mkdir -p /usr/local/share/doc/chruby-0.3.8
-cp -r *.md *.txt /usr/local/share/doc/chruby-0.3.8/
-➜  chruby-0.3.8
-
-➜  chruby-0.3.8 sudo ./scripts/setup.sh   (*** Warning - You may not want to run this ***)
-
-Note: The above script will install ruby-install and a version of Ruby, 2.0.0, into /opt/rubies
-      The install via setup.sh, as far as ruby went, failed.  I removed the ruby* files and directories
-      that were created under /usr/local/src and continued to install ruby-install and ruby as
-      seedn below.
-
-You may not want to run the above, but install ruby-install using the instructions in the url:
-https://github.com/postmodern/ruby-install. Then install the version of Ruby that you want.
-
-➜  chruby-0.3.8 cd Downloads/
-➜  Downloads
-➜  Downloads  wget -O ruby-install-0.5.0.tar.gz https://github.com/postmodern/ruby-install/archive/v0.5.0.tar.gz
-➜  Downloads  tar -xzvf ruby-install-0.5.0.tar.gz
-➜  Downloads  cd ruby-install-0.5.0
-➜  ruby-install-0.5.0
-➜  ruby-install-0.5.0  sudo make install
-for dir in `find bin share -type d`; do mkdir -p /usr/local/$dir; done
-for file in `find bin share -type f`; do cp $file /usr/local/$file; done
-mkdir -p /usr/local/share/doc/ruby-install-0.5.0
-cp -r *.md *.txt /usr/local/share/doc/ruby-install-0.5.0/
-➜  ruby-install-0.5.0
-
-➜  ~  ruby-install --version
-ruby-install: 0.5.0
-➜  ~
-
-➜  ~  ruby-install
-Latest ruby versions:
-  ruby:
-    1.9.3-p547
-    2.0.0-p576
-    2.1.3
-  jruby:
-    1.7.16
-  rbx:
-    2.2.10
-  maglev:
-    1.0.0
-  mruby:
-    1.0.0
-➜  ~  ruby-install ruby 2.1.3
-{--SNIP--}
->>> Successfully installed ruby 2.1.3 into /home/jfhogarty/.rubies/ruby-2.1.3
-➜  ~
-
-ADD THE FOLLOWING TO MAKE chruby AVAILABLE TO ALL USERS:
-sudo vim /etc/profile.d/chruby.sh
-if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]; then
-  source /usr/local/share/chruby/chruby.sh
-  source /usr/local/share/chruby/auto.sh
-fi
-
-ADD TO .zshrc and/or .bashrc
-# Support for chruby:
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
 
 ADD THE FOLLOWING TO SUPPORT AUTO-SWITCHING:
 ➜  ~  echo "ruby-2.1.3" > ~/.ruby-version

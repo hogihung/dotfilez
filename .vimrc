@@ -45,6 +45,9 @@ Plugin 'yegappan/greplace'
 Plugin 'rking/ag.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'Valloric/YouCompleteMe'
+" Next line is for a better vim status line
+Plugin 'itchyny/lightline.vim'
+Plugin 'elixir-lang/vim-elixir'
 
 " All of your Plugins must be added before the following line
 call vundle#end()		" required
@@ -60,7 +63,9 @@ set laststatus=2             " Display vim status bar
 set updatecount=0            " Disable swap files
 set splitright               " Put new file to right on vertical split
 set splitbelow               " Put new file to bottom on horizontal split
-set relativenumber           " Set relative numbering
+
+" Using a toggle now for this - use Cntrl+n
+"set relativenumber           " Set relative numbering (set rnu / set nornu)
 
 " Setup ctags (currently for fcctv-forward app
 set tags=/Users/jfhogarty/Documents/RoR/tags
@@ -82,6 +87,9 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
+
+" Change color scheme for lightline (vim status bar)
+let g:lightline = { 'colorscheme': 'wombat', }
 
 " Configure color theme
 let g:solarized_termcolors=256
@@ -126,6 +134,8 @@ nnoremap <C-j> <C-w><C-j>
 nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
 nnoremap <C-h> <C-w><C-h>
+
+nnoremap <C-n> :call NumberToggle()<cr>
 
 " Map keys to support executing ruby code inside vim
 nmap <buffer> <F4> <Plug>(xmpfilter-mark)
@@ -233,3 +243,11 @@ function! s:align()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
+
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set nornu
+  else
+    set rnu
+  endif
+endfunc
