@@ -45,9 +45,11 @@ Plugin 'yegappan/greplace'
 Plugin 'rking/ag.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'Valloric/YouCompleteMe'
-" Next line is for a better vim status line
-Plugin 'itchyny/lightline.vim'
 Plugin 'elixir-lang/vim-elixir'
+" Use vim-airline or lightine for better status bar (requires powerline fonts
+Plugin 'bling/vim-airline'
+" Next line is for a better vim status line
+"Plugin 'itchyny/lightline.vim' "Comment out, going back to vanilla.
 
 " All of your Plugins must be added before the following line
 call vundle#end()		" required
@@ -88,8 +90,14 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+" Customization for vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+
 " Change color scheme for lightline (vim status bar)
-let g:lightline = { 'colorscheme': 'wombat', }
+"let g:lightline = { 'colorscheme': 'wombat', }
 
 " Configure color theme
 let g:solarized_termcolors=256
