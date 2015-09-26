@@ -91,7 +91,9 @@ set shiftwidth=2
 set expandtab
 
 " Customization for vim-airline
+" Use :help airline for info on configuring vim-airline
 let g:airline_powerline_fonts = 1
+let g:airline_theme='bubblegum'
 let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
