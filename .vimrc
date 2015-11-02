@@ -90,6 +90,10 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+" set a guifont for MacVim and Powerline Font support
+" You can now use Cntrl+g to turn on the font setting below
+nnoremap <C-g> :set guifont=Source\ Code\ Pro\ for\ Powerline:h14<cr>
+
 " Customization for vim-airline
 " Use :help airline for info on configuring vim-airline
 let g:airline_powerline_fonts = 1
