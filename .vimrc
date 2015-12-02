@@ -90,6 +90,9 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+" Set Vim Explorer to display like NERDTree
+let g:netrw_liststyle=3
+
 " set a guifont for MacVim and Powerline Font support
 " You can now use Cntrl+g to turn on the font setting below
 nnoremap <C-g> :set guifont=Source\ Code\ Pro\ for\ Powerline:h14<cr>
