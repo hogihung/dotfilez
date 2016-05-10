@@ -47,7 +47,9 @@ Plugin 'godlygeek/tabular'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'elixir-lang/vim-elixir'
 " Use vim-airline or lightine for better status bar (requires powerline fonts
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+" Vim Airline themes moved to their own repo
+Plugin 'vim-airline/vim-airline-themes'
 " Next line is for a better vim status line
 "Plugin 'itchyny/lightline.vim' "Comment out, going back to vanilla.
 
