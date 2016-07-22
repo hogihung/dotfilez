@@ -1,0 +1,53 @@
+# NOTE: This file provided as an example.  Feel free to borrow and modify for
+#       your own environment.  You link to this file from your home directory.
+
+# User defined alias's
+alias ror="cd ~/Documents/RoR"
+alias lrn="cd ~/Documents/RoR/LEARNING_NOTES"
+alias ognt="cd ~/Documents/RoR/oldguynewtrick"
+alias elx="cd ~/Documents/Programming/Elixir"
+alias fccf="cd ~/Documents/RoR/fcctv-forward"
+alias fcca="cd ~/Documents/RoR/fcctv-assignment"
+alias fccr="cd ~/Documents/RoR/fcctv-reverse"
+alias frpt="cd ~/Documents/RoR/report-publishing-tool"
+alias gc="git checkout"
+alias gcm="git commit -m"
+alias tms="~/tmux_start.sh"
+
+alias cuc='cucumber -r features'
+alias cucs='cucumber -r features SELENIUM=true'
+alias cucp='cucumber -r features -p startup SELENIUM=true'
+alias end_round1='cucp features/start_auctions/end_round_1.feature'
+alias end_round2='cucp features/start_auctions/end_round_2.feature'
+alias stage2r1='cucp features/start_auctions/start_s2_r1.feature'
+
+alias ll='ls -al'
+alias lt='ls -atr'
+alias be='bundle exec'
+alias lvh='rails s -p 3000 -b lvh.me'
+
+# Alias for starting the ARBS server environment
+alias start_arbs="clear; SOLVER_DEBUG_CIRCUMVENT_GUROBI=whatever bundle exec thin start"
+
+# Alias for starting MongoDB which is used in the FCC PRS Report Publishing Tool
+alias mongo_start='mongod --config /usr/local/etc/mongod.conf'
+
+# These are defined for Mysql that runs on my Macs
+alias mysql_start='Mysql.server start'
+alias mysql_stop='Mysql.server stop'
+alias mysql_status='Mysql.server status'
+
+# Change author value to desired committer
+alias git_john='git log --no-merges --stat --author="John Hogarty" --name-only --pretty=format:"" | sort -u'
+alias find_wait="fgrep -r wait features/ | grep 33"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Add psql to the path:
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
+# Added for otto tool
+export PATH="$PATH:/Users/jfhogarty/bin"
+
+#eval "$(chef shell-init zsh)"

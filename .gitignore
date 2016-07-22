@@ -33,3 +33,5 @@ examples.desktop
 .pryrc.local
 .ruby-version
 .pry_history
+.zshrc.local
+.bashrc.local
