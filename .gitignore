@@ -35,3 +35,4 @@ examples.desktop
 .pry_history
 .zshrc.local
 .bashrc.local
+.gitconfig
