@@ -44,7 +44,7 @@ Plugin 'L9'
 Plugin 'yegappan/greplace'
 Plugin 'rking/ag.vim'
 Plugin 'godlygeek/tabular'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'   
 Plugin 'elixir-lang/vim-elixir'
 " Use vim-airline or lightine for better status bar (requires powerline fonts
 Plugin 'vim-airline/vim-airline'
@@ -56,6 +56,9 @@ Plugin 'vim-airline/vim-airline-themes'
 " All of your Plugins must be added before the following line
 call vundle#end()		" required
 filetype plugin indent on	" required
+
+" Setup of JSHint2
+set runtimepath+=~/.vim/bundle/jshint2.vim/
 
 " Set basic setup
 syntax on
