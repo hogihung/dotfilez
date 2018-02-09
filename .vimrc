@@ -86,6 +86,11 @@ nnoremap ; :
 " Auto save files when switching focus
 autocmd FocusLost * silent! wall
 
+
+" Auto format exlixir files (for elixir 1.6)
+autocmd BufWritePost *.exs silent :!mixformat %
+autocmd BufWritePost *.ex silent :!mixformat %
+
 " Create mapping to shortcut using :%:h
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
